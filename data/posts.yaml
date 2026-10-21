@@ -1,0 +1,17 @@
+# 测试创建文章的数据
+create_post_cases:
+  - case_name: "正常创建文章"
+    payload:
+      title: "hello world"
+      body: "this is a test post"
+      userId: 1
+    expected_status: 201
+    expected_title: "hello world"
+
+  - case_name: "标题为空也能创建"
+    payload:
+      title: ""
+      body: "empty title test"
+      userId: 2
+    expected_status: 201
+    expected_title: ""
