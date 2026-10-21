@@ -1,0 +1,10 @@
+# 忽略 PyCharm 配置文件夹
+.idea/
+*.iml
+
+# 忽略 Python 编译缓存
+__pycache__/
+*.pyc
+
+# 忽略虚拟环境
+.venv/
